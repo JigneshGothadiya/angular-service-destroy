@@ -1,0 +1,10 @@
+<div>
+  <component1 *ngIf="showComp1"></component1>
+  <component2 *ngIf="showComp2"></component2>
+</div>
+<div class="buttons">
+  <button (click)="showComp1 = !showComp1">Show/Hide Comp1</button>
+  <button (click)="showComp2 = !showComp2">Show/Hide Comp2</button>
+
+  <button (click)="exitMain()">Remove Child Module</button>
+</div>
